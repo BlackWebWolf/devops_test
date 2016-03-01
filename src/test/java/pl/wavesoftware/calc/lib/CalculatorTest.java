@@ -43,4 +43,14 @@ public class CalculatorTest {
         assertEquals(expResult, result);
     }
 
+    @org.junit.Test
+    public void testFailed_zero() {
+        int a = 0;
+        int b = 0;
+        Calculator instance = new Calculator();
+        String expResult = "no!";
+        String result = instance.failed(a, b);
+        assertEquals(expResult, result);
+    }
+
 }
